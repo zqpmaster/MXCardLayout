@@ -15,14 +15,8 @@
     if (self = [super initWithFrame:frame])
     {
 
-        _imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"DJI00479.jpg"]];
-        _imageView.frame = self.contentView.bounds;
-        
+        _imageView = [[UIImageView alloc] initWithFrame:self.contentView.bounds];
         [self.contentView addSubview:_imageView];
-//        self.layer.borderWidth = 1;
-//        self.layer.borderColor = [UIColor blueColor].CGColor;
-        _imageView.layer.cornerRadius = 5;
-
     }
     
     return self;

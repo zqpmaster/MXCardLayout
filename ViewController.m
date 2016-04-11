@@ -11,6 +11,8 @@
 #import "MXCollectionViewCell.h"
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (nonatomic, strong, nonnull) NSArray *imageNames;
+
 @end
 
 @implementation ViewController
@@ -18,13 +20,26 @@
 
 - (void)viewDidLoad
 {
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i < 10; i++)
+    {
+        NSString *name = [NSString stringWithFormat:@"Snap/IMG_72%d", (i + 11)];
+        [array addObject:name];
+    }
+    
+    self.imageNames = array;
+    
     [self.collectionView registerClass:[MXCollectionViewCell class] forCellWithReuseIdentifier:@"reuse"];
     self.collectionView.backgroundColor = [UIColor whiteColor];
+    
+    UIImageView *backImageView = [[UIImageView alloc] initWithFrame:self.collectionView.bounds];
+    backImageView.image = [UIImage imageNamed:@"Snap/10366009.jpg"];
+    self.collectionView.backgroundView = backImageView;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 20;
+    return _imageNames.count;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -47,12 +62,7 @@
 
 - (void)configureCell:(MXCollectionViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
-    UIView  *subview = [cell.contentView viewWithTag:TAG];
-    [subview removeFromSuperview];
-
-//    cell.imageView.image =  [UIImage imageNamed:@"i1"];
-//    cell.mainLabel.text = @"Glaciers";
-    
+    cell.imageView.image = [UIImage imageNamed:_imageNames[indexPath.row]];
     cell.backgroundColor = [UIColor grayColor];
 
 }
