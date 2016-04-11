@@ -1,17 +1,11 @@
-//
-//  ViewController.m
-//  MXCardViewLayout
-//
-//  Created by ROBERA GELETA on 1/23/15.
-//  Copyright (c) 2015 ROBERA GELETA. All rights reserved.
-//
+
 #define TAG 99
 
 #import "ViewController.h"
 #import "MXCollectionViewCell.h"
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
-@property (nonatomic, strong, nonnull) NSArray *imageNames;
+@property (nonatomic, strong, nonnull) NSArray *images;
 
 @end
 
@@ -24,10 +18,14 @@
     for (int i = 0; i < 10; i++)
     {
         NSString *name = [NSString stringWithFormat:@"Snap/IMG_72%d", (i + 11)];
-        [array addObject:name];
+        UIImage *image = [UIImage imageNamed:name];
+        if (image)
+        {
+            [array addObject:image];
+        }
     }
     
-    self.imageNames = array;
+    self.images = array;
     
     [self.collectionView registerClass:[MXCollectionViewCell class] forCellWithReuseIdentifier:@"reuse"];
     self.collectionView.backgroundColor = [UIColor whiteColor];
@@ -39,7 +37,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return _imageNames.count;
+    return _images.count;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -62,7 +60,7 @@
 
 - (void)configureCell:(MXCollectionViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
-    cell.imageView.image = [UIImage imageNamed:_imageNames[indexPath.row]];
+    cell.imageView.image = _images[indexPath.row];
     cell.backgroundColor = [UIColor grayColor];
 
 }
