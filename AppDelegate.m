@@ -12,9 +12,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     MXCardViewLayout *layout = [[MXCardViewLayout alloc] init];
-    layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
-    layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width*2/3, [UIScreen mainScreen].bounds.size.height*3/4);
+    layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width*2/3, [UIScreen mainScreen].bounds.size.height);
     
     ViewController *vc = [[ViewController alloc] initWithCollectionViewLayout:layout];
     UINavigationController *nav  = [[UINavigationController alloc] initWithRootViewController:vc];

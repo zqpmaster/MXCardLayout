@@ -1,6 +1,4 @@
 
-#define TAG 99
-
 #import "ViewController.h"
 #import "MXCollectionViewCell.h"
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
@@ -11,6 +9,7 @@
 
 @implementation ViewController
 
+static NSString * const CellReuseIdentifier = @"CellReuseIdentifier";
 
 - (void)viewDidLoad
 {
@@ -27,7 +26,10 @@
     
     self.images = array;
     
-    [self.collectionView registerClass:[MXCollectionViewCell class] forCellWithReuseIdentifier:@"reuse"];
+    UINib *cellNib = [UINib nibWithNibName:@"MXCollectionViewCell" bundle:[NSBundle mainBundle]];
+    
+    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:CellReuseIdentifier];
+    
     self.collectionView.backgroundColor = [UIColor whiteColor];
     
     UIImageView *backImageView = [[UIImageView alloc] initWithFrame:self.collectionView.bounds];
@@ -47,7 +49,7 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    MXCollectionViewCell *cell = (MXCollectionViewCell  *)[collectionView dequeueReusableCellWithReuseIdentifier:@"reuse" forIndexPath:indexPath];
+    MXCollectionViewCell *cell = (MXCollectionViewCell  *)[collectionView dequeueReusableCellWithReuseIdentifier:CellReuseIdentifier forIndexPath:indexPath];
     [self configureCell:cell withIndexPath:indexPath];
     
     return cell;
@@ -61,7 +63,6 @@
 - (void)configureCell:(MXCollectionViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
     cell.imageView.image = _images[indexPath.row];
-    cell.backgroundColor = [UIColor grayColor];
 
 }
 @end
