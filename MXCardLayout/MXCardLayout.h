@@ -5,7 +5,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MXCardViewLayout : UICollectionViewLayout
+@interface MXCardLayout : UICollectionViewLayout
 
 @property (nonatomic) CGSize itemSize;
 

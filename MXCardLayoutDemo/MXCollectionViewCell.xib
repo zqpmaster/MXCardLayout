@@ -111,14 +111,12 @@
                     <exclude reference="MQI-mv-fbU"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="pG2-9f-boJ"/>
+                    <exclude reference="zln-99-hAR"/>
                     <exclude reference="CLT-JH-N25"/>
                     <exclude reference="LEV-wv-0VB"/>
                     <exclude reference="muZ-Mc-jz3"/>
                     <exclude reference="pIP-Af-plT"/>
-                    <exclude reference="3fH-Nm-lUP"/>
-                    <exclude reference="rFS-eh-hqV"/>
-                    <exclude reference="pG2-9f-boJ"/>
-                    <exclude reference="zln-99-hAR"/>
                     <exclude reference="KUk-cz-Z79"/>
                     <exclude reference="hGV-BQ-omQ"/>
                     <exclude reference="jLo-PS-3W9"/>
@@ -127,6 +125,8 @@
                     <exclude reference="G35-UY-dxL"/>
                     <exclude reference="RJu-aZ-WVj"/>
                     <exclude reference="WrH-SF-AHv"/>
+                    <exclude reference="3fH-Nm-lUP"/>
+                    <exclude reference="rFS-eh-hqV"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -138,14 +138,12 @@
                     <include reference="MQI-mv-fbU"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="pG2-9f-boJ"/>
+                    <include reference="zln-99-hAR"/>
                     <include reference="CLT-JH-N25"/>
                     <include reference="LEV-wv-0VB"/>
                     <include reference="muZ-Mc-jz3"/>
                     <include reference="pIP-Af-plT"/>
-                    <include reference="3fH-Nm-lUP"/>
-                    <include reference="rFS-eh-hqV"/>
-                    <include reference="pG2-9f-boJ"/>
-                    <include reference="zln-99-hAR"/>
                     <include reference="KUk-cz-Z79"/>
                     <include reference="hGV-BQ-omQ"/>
                     <include reference="jLo-PS-3W9"/>
@@ -154,6 +152,8 @@
                     <include reference="G35-UY-dxL"/>
                     <include reference="RJu-aZ-WVj"/>
                     <include reference="WrH-SF-AHv"/>
+                    <include reference="3fH-Nm-lUP"/>
+                    <include reference="rFS-eh-hqV"/>
                 </mask>
             </variation>
             <connections>

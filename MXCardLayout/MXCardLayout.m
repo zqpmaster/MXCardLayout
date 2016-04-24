@@ -1,8 +1,8 @@
 
-#import "MXCardViewLayout.h"
+#import "MXCardLayout.h"
 #import <math.h>
 
-@interface MXCardViewLayout ()
+@interface MXCardLayout ()
 
 @property (nonatomic, assign) CGFloat viewWidth;
 @property (nonatomic, assign) CGFloat virtualItemWidth;
@@ -13,7 +13,7 @@
 
 #define MARGIN (_viewWidth / 3 - _virtualItemWidth / 2)
 
-@implementation MXCardViewLayout
+@implementation MXCardLayout
 
 - (void)dealloc
 {

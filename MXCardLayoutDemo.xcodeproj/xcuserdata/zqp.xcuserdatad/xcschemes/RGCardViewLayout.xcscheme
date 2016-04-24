@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A128C7E41A734A9800C75B99"
-               BuildableName = "MXCardViewLayout.app"
-               BlueprintName = "MXCardViewLayout"
-               ReferencedContainer = "container:MXCardViewLayout.xcodeproj">
+               BuildableName = "MXCardLayoutDemo.app"
+               BlueprintName = "MXCardLayoutDemo"
+               ReferencedContainer = "container:MXCardLayoutDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A128C7FD1A734A9800C75B99"
-               BuildableName = "MXCardViewLayout.xctest"
-               BlueprintName = "MXCardViewLayoutTests"
-               ReferencedContainer = "container:MXCardViewLayout.xcodeproj">
+               BuildableName = "MXCardLayoutDemo.xctest"
+               BlueprintName = "MXCardLayoutDemoTests"
+               ReferencedContainer = "container:MXCardLayoutDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A128C7E41A734A9800C75B99"
-            BuildableName = "MXCardViewLayout.app"
-            BlueprintName = "MXCardViewLayout"
-            ReferencedContainer = "container:MXCardViewLayout.xcodeproj">
+            BuildableName = "MXCardLayoutDemo.app"
+            BlueprintName = "MXCardLayoutDemo"
+            ReferencedContainer = "container:MXCardLayoutDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A128C7E41A734A9800C75B99"
-            BuildableName = "MXCardViewLayout.app"
-            BlueprintName = "MXCardViewLayout"
-            ReferencedContainer = "container:MXCardViewLayout.xcodeproj">
+            BuildableName = "MXCardLayoutDemo.app"
+            BlueprintName = "MXCardLayoutDemo"
+            ReferencedContainer = "container:MXCardLayoutDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A128C7E41A734A9800C75B99"
-            BuildableName = "MXCardViewLayout.app"
-            BlueprintName = "MXCardViewLayout"
-            ReferencedContainer = "container:MXCardViewLayout.xcodeproj">
+            BuildableName = "MXCardLayoutDemo.app"
+            BlueprintName = "MXCardLayoutDemo"
+            ReferencedContainer = "container:MXCardLayoutDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

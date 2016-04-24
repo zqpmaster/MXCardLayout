@@ -2,11 +2,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface MXCardViewLayoutTests : XCTestCase
+@interface MXCardLayoutDemoTests : XCTestCase
 
 @end
 
-@implementation MXCardViewLayoutTests
+@implementation MXCardLayoutDemoTests
 
 - (void)setUp {
     [super setUp];

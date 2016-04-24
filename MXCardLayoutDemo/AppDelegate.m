@@ -1,7 +1,7 @@
 
 #import "AppDelegate.h"
 #import "MXCollectionViewController.h"
-#import "MXCardViewLayout.h"
+#import "MXCardLayout.h"
 
 @interface AppDelegate ()
 
@@ -11,7 +11,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    MXCardViewLayout *layout = [[MXCardViewLayout alloc] init];
+    MXCardLayout *layout = [[MXCardLayout alloc] init];
     
     layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width*2/3, [UIScreen mainScreen].bounds.size.height);
     
