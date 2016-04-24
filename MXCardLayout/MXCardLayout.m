@@ -25,7 +25,7 @@
     [super prepareLayout];
     if (self.visibleCount < 1)
     {
-        self.visibleCount = 5;
+        self.visibleCount = 4;
     }
     
     self.viewWidth = CGRectGetWidth(self.collectionView.frame);
@@ -43,7 +43,7 @@
     CGFloat centerX = (self.collectionView.contentOffset.x) + _viewWidth / 2;
     NSInteger index = centerX / _virtualItemWidth;
     NSInteger count = (self.visibleCount - 1) / 2;
-    NSInteger minIndex = MAX(0, (index - count));
+    NSInteger minIndex = MAX(0, (index - count - 1));
     NSInteger maxIndex = MIN((cellCount - 1), (index + count));
     NSMutableArray *array = [NSMutableArray array];
     for (NSInteger i = minIndex; i <= maxIndex; i++) {
