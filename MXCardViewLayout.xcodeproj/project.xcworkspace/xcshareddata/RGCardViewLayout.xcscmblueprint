@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "91E38A6E06BB0C2898403AEA79B0A4AC2BF6AF2F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "91E38A6E06BB0C2898403AEA79B0A4AC2BF6AF2F" : 0,
+    "30199E033BC008EB0ADEC7E1B323C3A51FB3168F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B93D1E18-79D0-46A9-B3C8-C45051BB444E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "91E38A6E06BB0C2898403AEA79B0A4AC2BF6AF2F" : "RGCardViewLayout-master\/",
+    "30199E033BC008EB0ADEC7E1B323C3A51FB3168F" : "RGCardViewLayout"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RGCardViewLayout",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RGCardViewLayout.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/terminatorover\/RGCardViewLayout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30199E033BC008EB0ADEC7E1B323C3A51FB3168F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitcafe.com:zqpmaster\/multitasking.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "91E38A6E06BB0C2898403AEA79B0A4AC2BF6AF2F"
+    }
+  ]
+}
