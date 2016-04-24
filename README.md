@@ -14,12 +14,12 @@ MXCardLayout reproduces the behavior seen in iOS9's multitasking switcher.
 - Create a UICollectionViewController with MXCardLayout
 
 ```
-
-    MXCardLayout *layout = [[MXCardLayout alloc] init];
-    
+	 MXCardLayout *layout = [[MXCardLayout alloc] init]; 
+	 
     layout.itemSize = CGSizeMake(100,150);
     
     MXCollectionViewController *vc = [[MXCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    
 ```
 
 ###License
