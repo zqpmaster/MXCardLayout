@@ -29,16 +29,14 @@
     self.backgroundColor = [UIColor clearColor];
     _snapView.layer.cornerRadius = 5;
     _snapView.clipsToBounds = YES;
-    _appIcon.layer.cornerRadius = 2;
+    _appIcon.layer.cornerRadius = 6;
     _appIcon.clipsToBounds = YES;
-    
-    _snapBlurEffect.alpha = 0;
     
     @weakify(self)
     [self addObserverBlockForKeyPath:@"alpha" block:^(id obj, id oldVal, id newVal) {
         @strongify(self)
-        self.snapBlurEffect.alpha = MIN(2 * (1 - self.alpha), 1);
-        self.iconBlurEffect.alpha = MIN(2 * (1 - self.alpha), 1) ;
+        self.snapBlurEffect.alpha = MIN(3 * (1 - self.alpha), 0.6);
+        self.iconBlurEffect.alpha = MIN(3 * (1 - self.alpha), 0.6);
         if (self.alpha == 1)
         {
             self.appNameLabel.alpha = 1;

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MXCollectionViewController"/>
@@ -11,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snap/AppIcon60x60.png" translatesAutoresizingMaskIntoConstraints="NO" id="vTC-EX-4P1">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vTC-EX-4P1">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="L2p-pb-KXe">
@@ -36,6 +37,19 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jhO-TE-M8R">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jhO-TE-M8R" secondAttribute="height" multiplier="50:89" priority="750" id="79B-18-snt"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="79B-18-snt"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="79B-18-snt"/>
+                        </mask>
+                    </variation>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xs8-sj-uhG">
                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -49,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
-                    <blurEffect style="light"/>
+                    <blurEffect style="dark"/>
                 </visualEffectView>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQI-mv-fbU">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -57,7 +71,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
-                    <blurEffect style="light"/>
+                    <blurEffect style="dark"/>
                 </visualEffectView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -67,13 +81,11 @@
                 </constraint>
                 <constraint firstAttribute="bottom" secondItem="jhO-TE-M8R" secondAttribute="bottom" constant="68" id="7kH-Db-pXp"/>
                 <constraint firstItem="MQI-mv-fbU" firstAttribute="height" secondItem="vTC-EX-4P1" secondAttribute="height" id="CLT-JH-N25"/>
+                <constraint firstItem="jhO-TE-M8R" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="G35-UY-dxL"/>
                 <constraint firstItem="WJ7-v3-nf6" firstAttribute="width" secondItem="jhO-TE-M8R" secondAttribute="width" id="KUk-cz-Z79"/>
                 <constraint firstItem="MQI-mv-fbU" firstAttribute="centerY" secondItem="vTC-EX-4P1" secondAttribute="centerY" id="LEV-wv-0VB"/>
                 <constraint firstItem="jhO-TE-M8R" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="RJu-aZ-WVj"/>
                 <constraint firstItem="jhO-TE-M8R" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WrH-SF-AHv"/>
-                <constraint firstItem="jhO-TE-M8R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="79" id="gPf-U7-7ga">
-                    <variation key="heightClass=regular-widthClass=compact" constant="68"/>
-                </constraint>
                 <constraint firstItem="WJ7-v3-nf6" firstAttribute="centerX" secondItem="jhO-TE-M8R" secondAttribute="centerX" id="hGV-BQ-omQ"/>
                 <constraint firstItem="WJ7-v3-nf6" firstAttribute="top" secondItem="jhO-TE-M8R" secondAttribute="top" id="jLo-PS-3W9"/>
                 <constraint firstItem="MQI-mv-fbU" firstAttribute="centerX" secondItem="vTC-EX-4P1" secondAttribute="centerX" id="muZ-Mc-jz3"/>
@@ -99,22 +111,22 @@
                     <exclude reference="MQI-mv-fbU"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="pG2-9f-boJ"/>
-                    <exclude reference="zln-99-hAR"/>
                     <exclude reference="CLT-JH-N25"/>
                     <exclude reference="LEV-wv-0VB"/>
                     <exclude reference="muZ-Mc-jz3"/>
                     <exclude reference="pIP-Af-plT"/>
+                    <exclude reference="3fH-Nm-lUP"/>
+                    <exclude reference="rFS-eh-hqV"/>
+                    <exclude reference="pG2-9f-boJ"/>
+                    <exclude reference="zln-99-hAR"/>
                     <exclude reference="KUk-cz-Z79"/>
                     <exclude reference="hGV-BQ-omQ"/>
                     <exclude reference="jLo-PS-3W9"/>
                     <exclude reference="n4J-zZ-rUC"/>
                     <exclude reference="7kH-Db-pXp"/>
+                    <exclude reference="G35-UY-dxL"/>
                     <exclude reference="RJu-aZ-WVj"/>
                     <exclude reference="WrH-SF-AHv"/>
-                    <exclude reference="gPf-U7-7ga"/>
-                    <exclude reference="3fH-Nm-lUP"/>
-                    <exclude reference="rFS-eh-hqV"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -126,22 +138,22 @@
                     <include reference="MQI-mv-fbU"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="pG2-9f-boJ"/>
-                    <include reference="zln-99-hAR"/>
                     <include reference="CLT-JH-N25"/>
                     <include reference="LEV-wv-0VB"/>
                     <include reference="muZ-Mc-jz3"/>
                     <include reference="pIP-Af-plT"/>
+                    <include reference="3fH-Nm-lUP"/>
+                    <include reference="rFS-eh-hqV"/>
+                    <include reference="pG2-9f-boJ"/>
+                    <include reference="zln-99-hAR"/>
                     <include reference="KUk-cz-Z79"/>
                     <include reference="hGV-BQ-omQ"/>
                     <include reference="jLo-PS-3W9"/>
                     <include reference="n4J-zZ-rUC"/>
                     <include reference="7kH-Db-pXp"/>
+                    <include reference="G35-UY-dxL"/>
                     <include reference="RJu-aZ-WVj"/>
                     <include reference="WrH-SF-AHv"/>
-                    <include reference="gPf-U7-7ga"/>
-                    <include reference="3fH-Nm-lUP"/>
-                    <include reference="rFS-eh-hqV"/>
                 </mask>
             </variation>
             <connections>
@@ -154,7 +166,4 @@
             <point key="canvasLocation" x="330" y="334"/>
         </view>
     </objects>
-    <resources>
-        <image name="Snap/AppIcon60x60.png" width="64" height="96"/>
-    </resources>
 </document>

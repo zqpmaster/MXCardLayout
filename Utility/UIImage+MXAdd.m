@@ -35,7 +35,7 @@
     return scaledImage;
 }
 
-+ (UIImage *)simpleResizeImage:(UIImage*)image toSize:(CGSize)size{
++ (UIImage *)simpleResizeImage:(UIImage*)image toSize:(CGSize)size{    
     CGRect rect={0,0,size};
     UIGraphicsBeginImageContextWithOptions(size, NO, 0);
     [image drawInRect:rect];

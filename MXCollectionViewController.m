@@ -39,8 +39,8 @@ static NSString * const CellReuseIdentifier = @"CellReuseIdentifier";
                 MXModel *model = [MXModel new];
                 
                 model.title = item[0];
-                model.snap = [UIImage simpleResizeImage:[UIImage imageNamed:item[1]] toSize:SNAP_SIZE];
-                model.icon = [UIImage simpleResizeImage:[UIImage imageNamed:item[2]] toSize:ICON_SIZE] ;
+                model.snap = [UIImage imageNamed:item[1]];
+                model.icon = [UIImage imageNamed:item[2]];
                 
                 [array addObject:model];
                 
@@ -62,6 +62,8 @@ static NSString * const CellReuseIdentifier = @"CellReuseIdentifier";
     
 }
 
+#pragma mark collection view delegate
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return _items.count;
@@ -80,14 +82,17 @@ static NSString * const CellReuseIdentifier = @"CellReuseIdentifier";
     return cell;
 }
 
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
-
 - (void)configureCell:(MXCollectionViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
     cell.model = _items[indexPath.row];
 
 }
+
+#pragma mark view controller setting
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 @end
