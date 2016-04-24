@@ -7,7 +7,7 @@
 
 MXCardLayout reproduces the behavior seen in iOS9's multitasking switcher.
 
-![Preview](MXCardLayout.gif)
+![Preview](MXCardLayout.gif) {width=184px height=330px})
 
 ### Usage
 
