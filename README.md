@@ -1,5 +1,4 @@
-# MXCardLayout [![Build Status](https://travis-ci.org/zqpmaster/MX.svg?branch=master)](https://travis-ci.org/zqpmaster/MX)
-![License](https://img.shields.io/github/license/mashape/apistatus.svg)
+# MXCardLayout [![Build Status](https://travis-ci.org/zqpmaster/MX.svg?branch=master)](https://travis-ci.org/zqpmaster/MX) ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 ### Introduction
 
