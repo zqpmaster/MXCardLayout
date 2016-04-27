@@ -1,4 +1,5 @@
-# MXCardLayout [![Build Status](https://travis-ci.org/zqpmaster/MXCardLayout.svg?branch=master)](https://travis-ci.org/zqpmaster/MXCardLayout) ![License](https://img.shields.io/github/license/mashape/apistatus.svg)
+# MXCardLayout 
+[![Build Status](https://travis-ci.org/zqpmaster/MXCardLayout.svg?branch=master)](https://travis-ci.org/zqpmaster/MXCardLayout) ![License](https://img.shields.io/github/license/mashape/apistatus.svg) [![Platform](https://img.shields.io/cocoapods/p/GlitchLabel.svg?style=flat)](http://cocoapods.org/pods/glitchlabel)
 
 ### Introduction
 
