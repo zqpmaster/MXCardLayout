@@ -44,6 +44,11 @@ pod 'MXCardLayout'
 	MXCollectionViewController *vc = [[MXCollectionViewController alloc] initWithCollectionViewLayout:layout];
     
 ```
+# Changelog
+
+### Version: 0.1.0
+
+  * Initial Build
 
 ###License
 MXCardLayout is released under a MIT License. See LICENSE file for details.
