@@ -61,7 +61,7 @@
     
     CGFloat cX = (self.collectionView.contentOffset.x) + _viewWidth / 2;
     CGFloat attributesX = _virtualItemWidth * indexPath.row + _virtualItemWidth / 2 + MARGIN;
-    attributes.zIndex = attributesX/_virtualItemWidth;
+    attributes.zIndex = attributesX;
     
     CGFloat delta = cX - attributesX;
     

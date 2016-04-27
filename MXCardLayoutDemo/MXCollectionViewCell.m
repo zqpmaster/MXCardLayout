@@ -35,8 +35,8 @@
     @weakify(self)
     [self addObserverBlockForKeyPath:@"alpha" block:^(id obj, id oldVal, id newVal) {
         @strongify(self)
-        self.snapBlurEffect.alpha = MIN(3 * (1 - self.alpha), 0.6);
-        self.iconBlurEffect.alpha = MIN(3 * (1 - self.alpha), 0.6);
+//        self.snapBlurEffect.alpha = MIN(3 * (1 - self.alpha), 0.6);
+//        self.iconBlurEffect.alpha = MIN(3 * (1 - self.alpha), 0.6);
         if (self.alpha == 1)
         {
             self.appNameLabel.alpha = 1;
