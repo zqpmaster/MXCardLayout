@@ -8,19 +8,6 @@ MXCardLayout reproduces the behavior seen in iOS9's multitasking switcher.
 <!--<img src="MXCardLayout.gif" style="width:92px;height:165px;">
 -->
 
-### Usage
-
-- Create a UICollectionViewController with MXCardLayout
-
-```
-	MXCardLayout *layout = [[MXCardLayout alloc] init]; 
-
-	layout.itemSize = CGSizeMake(100,150);
-    
-	MXCollectionViewController *vc = [[MXCollectionViewController alloc] initWithCollectionViewLayout:layout];
-    
-```
-
 ### Installation
 There are two ways to use MXCardLayout in your project:
 
@@ -45,7 +32,18 @@ use_frameworks!
 pod 'MXCardLayout'
 ```
 
+### Usage
 
+- Create a UICollectionViewController with MXCardLayout
+
+```
+	MXCardLayout *layout = [[MXCardLayout alloc] init]; 
+
+	layout.itemSize = CGSizeMake(100,150);
+    
+	MXCollectionViewController *vc = [[MXCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    
+```
 
 ###License
 MXCardLayout is released under a MIT License. See LICENSE file for details.
