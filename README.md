@@ -44,9 +44,9 @@ pod 'MXCardLayout'
 	MXCollectionViewController *vc = [[MXCollectionViewController alloc] initWithCollectionViewLayout:layout];
     
 ```
-# Changelog
+### Changelog
 
-### Version: 0.1.0
+#### Version: 0.1.0
 
   * Initial Build
 
