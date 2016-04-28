@@ -5,6 +5,8 @@
 
 MXCardLayout reproduces the behavior seen in iOS9's multitasking switcher.
 
+仿iOS9多任务切换的卡片流。
+
 ![Preview](MXCardLayout.gif)
 <!--<img src="MXCardLayout.gif" style="width:92px;height:165px;">
 -->
