@@ -4,8 +4,9 @@
 ### Introduction
 
 MXCardLayout reproduces the behavior seen in iOS9's multitasking switcher.
+MXCardLayout is the subclass of UICollectionViewLayout.
 
-仿iOS9多任务切换实现的一个卡片流布局。
+仿iOS9多任务切换实现的一个卡片流布局。MXCardLayout继承自UICollectionViewLayout。
 
 ![Preview](MXCardLayout.gif)
 <!--<img src="MXCardLayout.gif" style="width:92px;height:165px;">
@@ -44,7 +45,7 @@ pod 'MXCardLayout'
 
 	layout.itemSize = CGSizeMake(100,150);
     
-	MXCollectionViewController *vc = [[MXCollectionViewController alloc] initWithCollectionViewLayout:layout];
+	UICollectionViewController *vc = [[UICollectionViewController alloc] initWithCollectionViewLayout:layout];
     
 ```
 ### Changelog
